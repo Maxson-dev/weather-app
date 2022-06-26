@@ -5,7 +5,7 @@ export interface Day {
   main: string,
   icon: string
 }
-export interface Current {
+export interface Today {
   temp: number,
   humidity: number,
   clouds: number,
@@ -13,7 +13,8 @@ export interface Current {
   icon: string
 }
 export interface Weather {
-  weather: Current,
+  weather: Today,
+  place: string,
 }
 
 export interface APIinfo {

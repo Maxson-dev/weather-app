@@ -1,0 +1,33 @@
+.card {
+  width: 70%;
+  background-color: #F0F0F0;
+  border-radius: 0.4em;
+  margin: 4em auto;
+  padding: 3em 1.5em;
+  font-size: 1.4em;
+}
+
+.row1 {
+  font-size: 1.7em;
+  margin-top: 0;
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1150px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.last {
+  margin: 0;
+}
+
+.img {
+  display: block;
+}
