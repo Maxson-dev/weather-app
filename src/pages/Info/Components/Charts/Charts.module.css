@@ -1,0 +1,9 @@
+.container {
+  padding: 5% 10%;
+  font-size: 1.2em;
+}
+
+.header {
+  text-align: center;
+  text-decoration: underline;
+}

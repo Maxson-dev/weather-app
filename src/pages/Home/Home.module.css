@@ -1,0 +1,35 @@
+.homePage {
+  color: black;
+  margin: 8em auto auto auto;
+  text-align: center;
+}
+
+.btn {
+  font-family: 'Staatliches', cursive;
+  font-size: 0.9em;
+  margin-left: 0.2em;
+  cursor: pointer;
+  padding: 0.5em;
+  width: auto;
+  height: 2.7em;
+  border: none;
+  background-color: #2F97C1;
+  border-radius: 0.5em;
+  color: white;
+}
+
+.input {
+  font-family: 'Staatliches', cursive;
+  padding: 0.2em 0.5em;
+  font-size: 1em;
+  border: 1px solid black;
+  border-radius: 0.5em;
+  width: auto;
+  height: 1.5em;
+  outline: none;
+}
+
+.input:focus {
+  outline: #2F97C1 solid 3px;
+  box-shadow: 0 0 10px #2F97C1;
+}
