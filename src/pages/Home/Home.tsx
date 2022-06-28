@@ -43,7 +43,7 @@ export default function Home() {
       </div>
       <h1 data-aos='fade-up' data-aos-delay="300" data-aos-duration="300">Weather Project</h1>
       <h2 data-aos='fade-up' data-aos-delay="600" data-aos-duration="300">The most accurate weather forecast</h2>
-      <form onSubmit={handleSubmit} data-aos='zoom-in' data-aos-delay="900" data-aos-duration="300">
+      <form onSubmit={handleSubmit}>
         <input name={"location"} className={styles.input} type="text" placeholder={"Enter location"} value={location} onChange={ (evt) => setLocation(evt.target.value)}/>
         <input className={styles.btn} type="submit" value="Get forecast"/>
       </form>
