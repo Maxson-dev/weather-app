@@ -1,0 +1,29 @@
+.location {
+  text-align: start;
+}
+
+.container {
+  margin: 4em 0 0 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.back {
+  font-family: 'Staatliches', cursive;
+  font-size: 1em;
+  width: 15em;
+  height: 2em;
+  margin-left: 0.2em;
+  padding: 0.5em;
+  border: none;
+  border-radius: 0.5em;
+  background-color: #2F97C1;
+  color: white;
+  cursor: pointer;
+}
+
+.back:hover {
+  transform: scale(1.1);
+}
+

@@ -3,7 +3,9 @@ export interface Day {
   nTemp: number,
   humidity: number,
   main: string,
-  icon: string
+  icon: string,
+  dt: [number|string, number|string],
+  clouds: number
 }
 export interface Today {
   temp: number,
@@ -18,14 +20,21 @@ export interface Weather {
 }
 
 export interface APIinfo {
+
   humidity: number,
   clouds: number,
-  weather: {
-    main: string,
-    icon: string
-  }
+  weather: Day[]
   temp: {
     day: number,
     night: number
   }
+}
+
+export interface DayProps {
+  data: Day
+}
+
+export interface ArrayDay {
+  children: any;
+  days: Day[]
 }

@@ -10,20 +10,19 @@ export default function Current(props: Weather) {
     AOS.init();
     AOS.refresh();
   },[])
-  // data-aos='fade-up' data-aos-delay="500" data-aos-duration="500"
   const w = props.weather;
   return (
     <div className={sl.card}>
-      <div data-aos={"fade-right"} data-aos-duration={"500"}>
+      <div data-aos={"fade-right"} data-aos-duration={"300"}>
         <h1 className={sl.row1}>Today's Weather</h1>
       </div>
-      <div className={sl.container}>
+      <div data-aos={"zoom-in"} data-aos-delay={"300"} data-aos-duration={"300"} className={sl.container}>
         <div className={sl.row2}>
-          <p data-aos={"fade-up"} data-aos-delay={"500"} data-aos-duration={"500"}>Current Temperature: {w.temp} C</p>
-          <p data-aos={"fade-up"} data-aos-delay={"1000"} data-aos-duration={"500"}>Humidity: {w.humidity}%</p>
-          <p data-aos={"fade-up"} data-aos-delay={"1500"} data-aos-duration={"500"} className={sl.last}>Clouds: {w.clouds}%</p>
+          <p>Current Temperature: {w.temp} C</p>
+          <p>Humidity: {w.humidity}%</p>
+          <p className={sl.last}>Clouds: {w.clouds}%</p>
         </div>
-        <div data-aos={"fade-left"} data-aos-delay={"2000"} data-aos-duration={"500"}>
+        <div data-aos={"fade-left"} data-aos-delay={"600"} data-aos-duration={"300"}>
           <img className={sl.img} src={`http://openweathermap.org/img/wn/${w.icon}@2x.png`} alt=""/>
           <p className={sl.last}>Current Status: {w.main}</p>
         </div>

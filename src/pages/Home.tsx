@@ -35,16 +35,15 @@ export default function Home() {
       console.log(err);
     }
   }
-
   const navigate = useNavigate();
   return (
     <div className={styles.homePage}>
       <div data-aos='fade-down'>
         <img src={logo} width={'200em'} height={'200em'} alt=""/>
       </div>
-      <h1 data-aos='fade-up' data-aos-delay="500" data-aos-duration="500">Weather Project</h1>
-      <h2 data-aos='fade-up' data-aos-delay="1000" data-aos-duration="500">The most accurate weather forecast</h2>
-      <form onSubmit={handleSubmit} data-aos='zoom-in' data-aos-delay="1500" data-aos-duration="500">
+      <h1 data-aos='fade-up' data-aos-delay="300" data-aos-duration="300">Weather Project</h1>
+      <h2 data-aos='fade-up' data-aos-delay="600" data-aos-duration="300">The most accurate weather forecast</h2>
+      <form onSubmit={handleSubmit} data-aos='zoom-in' data-aos-delay="900" data-aos-duration="300">
         <input name={"location"} className={styles.input} type="text" placeholder={"Enter location"} value={location} onChange={ (evt) => setLocation(evt.target.value)}/>
         <input className={styles.btn} type="submit" value="Get forecast"/>
       </form>

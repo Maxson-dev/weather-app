@@ -1,10 +1,14 @@
 .card {
   width: 70%;
-  background-color: #F0F0F0;
+  background-color: #C0C0C0;
   border-radius: 0.4em;
-  margin: 4em auto;
-  padding: 3em 1.5em;
-  font-size: 1.4em;
+  margin: 0 auto 2em;
+  padding: 7% 3.5%;
+  font-size: 1.5em;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.9);
 }
 
 .row1 {
@@ -21,6 +25,12 @@
 @media (max-width: 1150px) {
   .container {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  .card {
+    padding: 7% 10%;
   }
 }
 
