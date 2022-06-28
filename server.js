@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 
 async function createServer() {
   const app = express();
-  app.use(express.static(path.resolve(__dirname, "build")));
+  app.use(express.static( "build"));
   app.use("*", async (req, res) => {
     try {
       const html = await fs.readFile("./build/index.html", "utf-8");
@@ -23,3 +23,4 @@ async function createServer() {
 createServer().then( app => app.listen( PORT, () => {
   console.log(`Server is listening on port ${PORT}`);
 }) )
+//  git rebase --autostash
