@@ -4,11 +4,11 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import qs from 'query-string';
 import {Today, APIinfo, Day} from "./InfoInterfaces";
-import Current from "./Current";
+import Current from "./Components/Current/Current";
 import {useNavigate} from "react-router-dom";
-import Forecast from "./Forecast";
-import Card from "./Card";
-import Charts from "./Charts";
+import Forecast from "./Components/Forecast/Forecast";
+import Card from "./Components/Card/Card";
+import Charts from "./Components/Charts/Charts";
 
 
 export default function Info() {
