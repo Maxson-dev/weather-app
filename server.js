@@ -2,7 +2,7 @@ import express from "express";
 import fs from "node:fs/promises";
 import path from "node:path";
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 async function createServer() {
   const app = express();
@@ -21,5 +21,5 @@ async function createServer() {
 }
 
 createServer().then( app => app.listen( PORT, () => {
-  console.log(`Server is listening on port ${3000}`);
+  console.log(`Server is listening on port ${PORT}`);
 }) )
