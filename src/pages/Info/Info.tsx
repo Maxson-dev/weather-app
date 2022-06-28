@@ -8,6 +8,7 @@ import Current from "./Current";
 import {useNavigate} from "react-router-dom";
 import Forecast from "./Forecast";
 import Card from "./Card";
+import Charts from "./Charts";
 
 
 export default function Info() {
@@ -79,6 +80,7 @@ export default function Info() {
           return renderCard(i);
         } )}
       </Forecast>
+      <Charts children={""} days={days}/>
     </div>
   );
 }
