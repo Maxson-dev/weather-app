@@ -9,7 +9,7 @@ async function createServer() {
   app.use(express.static("build"));
   app.use("*", async (req, res) => {
     try {
-      const html = await fs.readFile("./index.html", "utf-8");
+      const html = await fs.readFile(path.resolve(__dirname, "./build/index.html"), "utf-8");
       res.setHeader("Content-Type", "text/html");
       res.end(html);
     } catch (err) {
