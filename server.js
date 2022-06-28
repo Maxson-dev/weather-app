@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 
 async function createServer() {
   const app = express();
-  app.use(express.static("build"));
+  app.use(express.static(path.resolve(__dirname, "build")));
   app.use("*", async (req, res) => {
     try {
       const html = await fs.readFile(path.resolve(__dirname, "./build/index.html"), "utf-8");
