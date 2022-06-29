@@ -13,8 +13,6 @@ Weather App uses a number of open source projects to work properly:
 
 ## Used API
 
-Weather App uses a number of open source projects to work properly:
-
 - [OpenWeather](https://openweathermap.org/weathermap) - for weather information
 - [Nominatim](https://nominatim.org/) - geocoding with OpenStreetMap data
 
