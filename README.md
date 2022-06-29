@@ -9,7 +9,7 @@ Weather App uses a number of open source projects to work properly:
 - [React Router](https://reactrouter.com/) - for client routing
 - [Express](https://expressjs.com) - fast node.js network app framework for backend
 - [AOS](https://michalsnik.github.io/aos/) - for beautiful animations when scrolling
--[react-chart-js](https://react-chartjs-2.js.org/) - for plotting weather charts
+- [react-chart-js](https://react-chartjs-2.js.org/) - for plotting weather charts
 
 ## Used API
 
