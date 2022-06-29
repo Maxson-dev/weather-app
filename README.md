@@ -19,3 +19,11 @@ Weather App uses a number of open source projects to work properly:
 
 
 ## Installation
+
+Install the dependencies and devDependencies and start the server.
+
+```sh
+npm i
+node server.js 
+```
+Then go in your browser to the link ```localhost:3000/```
